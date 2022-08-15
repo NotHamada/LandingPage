@@ -1,0 +1,19 @@
+:root {
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: ease 0.5s;
+  background: #0f0f0f;
+}
+
+.sidebar-open {
+  width: 20vw;
+}
+
+.sidebar-close {
+  width: 10vw;
+}
