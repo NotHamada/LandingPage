@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div class="sidebar-close" id="sidebar">
         <button onclick="toggleSidebar()">
         </button>
@@ -21,19 +22,6 @@
     </div>
     <div>
     </div>
-    <script>
-        function toggleSidebar() {
-            var sidebar = document.querySelector("#sidebar");
-            var header = document.querySelector("#header");
-            if (sidebar.className == 'sidebar-open') {
-                sidebar.className = 'sidebar-close';
-                header.className = null;
-            } else if (sidebar.className == 'sidebar-close') {
-                sidebar.className = 'sidebar-open';
-                header.className = 'header-changed';
-            }
-        }
-    </script>
 </body>
 
 </html>
