@@ -2,18 +2,48 @@
 }
 
 #sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  transition: ease 0.5s;
+  transition: 0.7s ease-in-out;
   background: #0f0f0f;
+  height: 100vh;
 }
 
 .sidebar-open {
-  width: 20vw;
+  width: 30vw;
 }
 
 .sidebar-close {
-  width: 10vw;
+  width: 0vw;
+}
+
+#header {
+  width: 100vw;
+  background: aqua;
+  height: 10vh;
+  transition: 0.7s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-changed {
+  width: 100vw;
+  left: 30vw;
+}
+
+@media screen and (max-width: 800px) {
+  #header {
+    width: 100vw;
+    left: 0;
+    transition: 0.7s ease-in-out;
+  }
+
+  .sidebar-open {
+    width: 100vw;
+  }
 }
