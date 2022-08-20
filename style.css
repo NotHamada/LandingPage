@@ -1,4 +1,9 @@
 :root {
+  --red: #7e0016;
+  --pink: #fa3165;
+  --light-blue: #487686;
+  --medium-blue: #13334c;
+  --dark-blue: #091930;
 }
 
 #sidebar {
