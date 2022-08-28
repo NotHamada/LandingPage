@@ -21,14 +21,14 @@
         <button onclick="toggleSidebar()" id="toggler">Click me</button>
         <ul id="navbar">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Contact</a></li>
         </ul>
         <div>
             <h3>Hello, visitor!</h3>
         </div>
     </div>
-    <section>
+    <section id="about">
         <div class="content-unchanged" id="content">
             <h1>Hello, visitor!</h1>
             <p>
@@ -38,6 +38,14 @@
                 You can click the button below to toggle the sidebar.
             </p>
             <button onclick="toggleSidebar()">Toggle sidebar</button>
+        </div>
+    </section>
+    <section id="works">
+        <div class="work-unchanged" id="work">
+            <h1>Contact</h1>
+            <p>
+                You can contact me at <a href="mailto:matheushamada@live.com"></a>
+            </p>
         </div>
     </section>
 </body>

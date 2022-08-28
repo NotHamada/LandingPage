@@ -89,13 +89,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   align-items: center;
   background: var(--light-blue);
   transition: 0.7s ease-in-out;
   top: 10vh;
   width: 100vw;
-  height: 100vh;
   right: 0;
   z-index: 1;
 }
@@ -113,3 +112,27 @@ a:hover {
   transition: 0.7s ease-in-out;
 }
  
+#work {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  top: 18vw;
+  background: var(--light-blue);
+  transition: 0.7s ease-in-out;
+}
+
+.work-unchanged {
+  left: 0;
+  background: var(--light-blue);
+  transition: 0.7s ease-in-out;
+}
+
+.work-changed {
+  left: 30vw;
+  width: 70vw !important;
+  background: var(--light-blue);
+  transition: 0.7s ease-in-out;
+}
