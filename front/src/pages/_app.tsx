@@ -2,7 +2,9 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import React from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./globals.css";
+import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -15,9 +17,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             </Head>
             <main
                 role="main"
-                className={"min-vh-100 overflow-hidden " + inter.className}
+                className={"min-vh-100 overflow-hidden" + inter.className}
             >
-                <div className="min-vw-100">
+                <Header></Header>
+                <div className="min-vw-100 container-fluid">
                     <Component {...pageProps} />
                 </div>
             </main>
