@@ -3,7 +3,7 @@ export default function Header() {
         <>
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
-                    <span className="navbar-brand mb-0 h1">Hello, I'm Hamada</span>
+                    <span className="navbar-brand mb-0 h1">Hello, I am Hamada</span>
                 </div>
             </nav>
         </>
